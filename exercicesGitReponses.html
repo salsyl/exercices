@@ -1,40 +1,37 @@
 
-1 Créer un nouveau dépôt Git en utilisant la commande git init.
+<!-- 1 Créer un nouveau dépôt Git en utilisant la commande git init. -->
  accéder au répertoire où vous souhaitez créer le dépôt. Ensuite, exécutez la commande git init pour initialiser un nouveau dépôt Git dans ce répertoire:
-
-
-
 cd mon_projet
 git init
-Pour ajouter un fichier au dépôt en utilisant la commande git add, vous pouvez spécifier le nom du fichier ou utiliser le caractère générique * pour ajouter tous les fichiers du répertoire. Par exemple:
 
-csharp
+ <!-- 2 Ajouter un fichier au dépôt en utilisant la commande git add. -->
+git add exercicesGit.html
+ou 
+git add .
 
-git add mon_fichier.txt
-git add *
-Pour vérifier l'état du dépôt en utilisant la commande git status, exécutez simplement la commande git status. Cette commande affichera les fichiers modifiés, ajoutés et supprimés, ainsi que la branche active et d'autres informations sur l'état du dépôt:
 
-lua
-
+<!-- 3 Vérifier l'état du dépôt en utilisant la commande git status. -->
 git status
-Pour effectuer un commit en utilisant la commande git commit, vous devez d'abord ajouter les fichiers à l'index en utilisant la commande git add. Ensuite, exécutez la commande git commit avec un message de commit pour enregistrer les modifications dans l'historique du dépôt:
+affiche les fichiers modifiés, ajoutés et supprimés, ainsi que la branche active et d'autres informations sur l'état du dépôt:
+
+<!-- 4 Effectuer un commit en utilisant la commande git commit. -->
+git commit -m "first commit"
+
+<!-- 5 Ajouter un deuxième fichier et effectuer un commit. -->
+creez un fichier deuxièmeFichier.html
+git status
+git add deuxièmeFichier.html
+git commit -m "deuxièmeFichier.html"
 
 
+<!-- 5 Ajouter un troisième fichier et effectuer un commit. -->
 
-git add mon_fichier.txt
-git commit -m "Ajout du fichier mon_fichier.txt"
-Pour ajouter un deuxième fichier et effectuer un commit, vous pouvez utiliser les mêmes commandes que pour le premier fichier:
-
-
-
-git add mon_deuxieme_fichier.txt
-git commit -m "Ajout du fichier mon_deuxieme_fichier.txt"
-Pour ajouter un troisième fichier et effectuer un commit, vous pouvez utiliser les mêmes commandes que pour le deuxième fichier:
+creez un fichier troisiemeFichier.txt
+git status
+git add troisiemeFichier.txt
+git commit -m "troisiemeFichier.txt"
 
 
-
-git add mon_troisieme_fichier.txt
-git commit -m "Ajout du fichier mon_troisieme_fichier.txt"
 Pour vérifier l'historique des commits en utilisant la commande git log, exécutez simplement la commande git log. Cette commande affichera une liste des commits, avec leur message, leur auteur, leur date et leur identifiant de commit:
 
 
