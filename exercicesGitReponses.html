@@ -1,0 +1,111 @@
+
+1 Créer un nouveau dépôt Git en utilisant la commande git init.
+ accéder au répertoire où vous souhaitez créer le dépôt. Ensuite, exécutez la commande git init pour initialiser un nouveau dépôt Git dans ce répertoire:
+
+
+
+cd mon_projet
+git init
+Pour ajouter un fichier au dépôt en utilisant la commande git add, vous pouvez spécifier le nom du fichier ou utiliser le caractère générique * pour ajouter tous les fichiers du répertoire. Par exemple:
+
+csharp
+
+git add mon_fichier.txt
+git add *
+Pour vérifier l'état du dépôt en utilisant la commande git status, exécutez simplement la commande git status. Cette commande affichera les fichiers modifiés, ajoutés et supprimés, ainsi que la branche active et d'autres informations sur l'état du dépôt:
+
+lua
+
+git status
+Pour effectuer un commit en utilisant la commande git commit, vous devez d'abord ajouter les fichiers à l'index en utilisant la commande git add. Ensuite, exécutez la commande git commit avec un message de commit pour enregistrer les modifications dans l'historique du dépôt:
+
+
+
+git add mon_fichier.txt
+git commit -m "Ajout du fichier mon_fichier.txt"
+Pour ajouter un deuxième fichier et effectuer un commit, vous pouvez utiliser les mêmes commandes que pour le premier fichier:
+
+
+
+git add mon_deuxieme_fichier.txt
+git commit -m "Ajout du fichier mon_deuxieme_fichier.txt"
+Pour ajouter un troisième fichier et effectuer un commit, vous pouvez utiliser les mêmes commandes que pour le deuxième fichier:
+
+
+
+git add mon_troisieme_fichier.txt
+git commit -m "Ajout du fichier mon_troisieme_fichier.txt"
+Pour vérifier l'historique des commits en utilisant la commande git log, exécutez simplement la commande git log. Cette commande affichera une liste des commits, avec leur message, leur auteur, leur date et leur identifiant de commit:
+
+
+
+git log
+Pour créer une nouvelle branche en utilisant la commande git branch, exécutez la commande git branch suivie du nom de la nouvelle branche:
+
+
+git branch nouvelle_branche
+Pour basculer sur la nouvelle branche en utilisant la commande git checkout, exécutez la commande git checkout suivie du nom de la branche:
+
+
+git checkout nouvelle_branche
+Pour modifier un fichier et effectuer un commit sur la nouvelle branche, utilisez les mêmes commandes que pour le premier fichier:
+
+
+
+git add mon_fichier_modifie.txt
+git commit -m "Modification du fichier mon_fichier_modifie.txt sur la nouvelle branche"
+Pour basculer sur la branche principale en utilisant la commande git checkout, exécutez la commande git checkout suivie du nom de la branche principale:
+
+
+git checkout master
+Pour fusionner la branche de travail dans la branche principale en utilisant l
+
+
+
+
+de la commande git merge, exécutez la commande git merge suivie du nom de la branche à fusionner:
+
+
+
+git merge nouvelle_branche
+Pour modifier un fichier sur la branche principale et effectuer un commit, utilisez les mêmes commandes que pour le premier fichier:
+
+
+
+git add mon_fichier_modifie2.txt
+git commit -m "Modification du fichier mon_fichier_modifie2.txt sur la branche principale"
+Pour supprimer un fichier en utilisant la commande git rm, exécutez la commande git rm suivie du nom du fichier à supprimer:
+
+
+
+git rm mon_fichier_a_supprimer.txt
+git commit -m "Suppression du fichier mon_fichier_a_supprimer.txt"
+Pour renommer un fichier en utilisant la commande git mv, exécutez la commande git mv suivie du nom du fichier existant et du nouveau nom de fichier:
+
+
+
+git mv mon_fichier.txt mon_nouveau_fichier.txt
+git commit -m "Renommage du fichier mon_fichier.txt en mon_nouveau_fichier.txt"
+Pour cloner un dépôt Git distant en utilisant la commande git clone, exécutez la commande git clone suivie de l'URL du dépôt distant:
+
+
+
+git clone https://github.com/utilisateur/mon_projet.git
+Pour mettre à jour le dépôt local avec les modifications du dépôt distant en utilisant la commande git pull, exécutez la commande git pull:
+
+
+git pull
+Pour envoyer les modifications locales au dépôt distant en utilisant la commande git push, exécutez la commande git push suivie du nom de la branche à pousser:
+
+perl
+
+git push origin master
+Pour annuler la dernière modification en utilisant la commande git revert, exécutez la commande git revert HEAD pour annuler le dernier commit:
+
+
+git revert HEAD
+Pour ignorer un fichier en créant un fichier .gitignore contenant le nom du fichier ou du dossier à ignorer, créez un nouveau fichier .gitignore dans le répertoire racine du dépôt et ajoutez le nom du fichier ou du dossier à ignorer. Par exemple:
+
+
+mon_fichier_a_ignorer.txt
+mon_dossier_a_ignorer/
