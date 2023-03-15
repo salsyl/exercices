@@ -37,43 +37,33 @@ git config --global user.email "csgonesse@hotmail.fr"
 
 <!-- 6 Vérifier l'historique des commits en utilisant la commande git log. -->
   git log.
-   affichera une liste des commits, avec leur message, leur auteur, leur date et leur identifiant de commit:
+   affiche la liste des commits, avec leur message, leur auteur, leur date et leur identifiant de commit:
+   q pour sortir
 
+<!-- 7 Créer une nouvelle branche en utilisant la commande git branch. -->
+Commencez par un préfixe pour indiquer le type de branche 
+git branch cours-git/premiere-branche
 
-Pour créer une nouvelle branche en utilisant la commande git branch, exécutez la commande git branch suivie du nom de la nouvelle branche:
+<!-- 8 Basculer sur la nouvelle branche en utilisant la commande git checkout. -->
+git checkout cours-git/premiere-branche
 
-
-git branch nouvelle_branche
-Pour basculer sur la nouvelle branche en utilisant la commande git checkout, exécutez la commande git checkout suivie du nom de la branche:
-
-
-git checkout nouvelle_branche
-Pour modifier un fichier et effectuer un commit sur la nouvelle branche, utilisez les mêmes commandes que pour le premier fichier:
-
-
-
+<!-- 9 Modifier un fichier et effectuer un commit sur la nouvelle branche. -->
+git status
 git add mon_fichier_modifie.txt
-git commit -m "Modification du fichier mon_fichier_modifie.txt sur la nouvelle branche"
-Pour basculer sur la branche principale en utilisant la commande git checkout, exécutez la commande git checkout suivie du nom de la branche principale:
+git commit -m "Modification sur la nouvelle branche"
 
-
+<!-- 10 Basculer sur la branche principale en utilisant la commande git checkout. -->
+git checkout +  nom de la branche principale:
 git checkout master
-Pour fusionner la branche de travail dans la branche principale en utilisant l
 
+<!-- 11 Fusionner la branche de travail dans la branche principale en utilisant la commande git merge. -->
+git merge suivie du nom de la branche à fusionner:
+git merge cours-git/premiereB
 
-
-
-de la commande git merge, exécutez la commande git merge suivie du nom de la branche à fusionner:
-
-
-
-git merge nouvelle_branche
-Pour modifier un fichier sur la branche principale et effectuer un commit, utilisez les mêmes commandes que pour le premier fichier:
-
-
-
-git add mon_fichier_modifie2.txt
-git commit -m "Modification du fichier mon_fichier_modifie2.txt sur la branche principale"
+<!-- 12 Modifier un fichier sur la branche principale et effectuer un commit. -->
+utilisez les mêmes commandes que pour le premier fichier:
+git add exercicesGitReponses.html
+git commit -m "Modification du fichier exercicesGitReponses.html sur la branche principale"
 Pour supprimer un fichier en utilisant la commande git rm, exécutez la commande git rm suivie du nom du fichier à supprimer:
 
 
